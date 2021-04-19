@@ -8,5 +8,7 @@ namespace SysEducation.Entities
 {
     class Assessment
     {
+        public double TestGrade { get; set; }
+        public double Weight { get; set; }
     }
 }

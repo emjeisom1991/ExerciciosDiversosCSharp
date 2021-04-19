@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SysEducation.Entities.Enums
 {
-    class Activity
+    enum Activity : int
     {
+        Test = 1,
+        Seminar = 2,
+        Project = 3,
+        CaseStudy = 4,
+        FinalTest = 5
     }
 }

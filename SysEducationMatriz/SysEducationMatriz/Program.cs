@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace SysEducation
+namespace SysEducationMatriz
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hello World!");
         }
     }
 }
