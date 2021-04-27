@@ -30,6 +30,7 @@ namespace NumPrimos
                 if (n == 1)
                 {
                     Console.WriteLine($"O numero {n} é primo e esta na posicao {i}.");
+                    vetprimo[cont] = n;
                     cont++;
                 }
                 else
@@ -45,6 +46,7 @@ namespace NumPrimos
                     if (primo)
                     {
                         Console.WriteLine($"O numero {n} é primo e esta na posicao {i}.");
+                        vetprimo[cont] = n;
                         cont++;
                     }
                 }
@@ -52,7 +54,12 @@ namespace NumPrimos
             Console.WriteLine();
             Console.WriteLine("Total de numeros primos encontrados: " + cont + ".");
 
-
+            Console.WriteLine();
+            Console.Write("Vetor dos numeros primos: ");
+            for (int i = 0; i < cont; i++)
+            {
+                Console.Write(vetprimo[i] + " ");
+            }
         }
     }
 }
