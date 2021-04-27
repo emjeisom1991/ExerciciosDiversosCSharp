@@ -12,6 +12,7 @@ namespace NumPrimos
             int cont = 0, n = 0;
             Boolean primo = false;
             int[] vet = new int[pos];
+            int[] vetprimo = new int[pos];
 
             Console.Write("Entre com os " + pos + " numeros: ");
             string[] num = Console.ReadLine().Split(' ');
@@ -23,8 +24,34 @@ namespace NumPrimos
             Console.WriteLine();
             for (int i = 0; i < pos; i++)
             {
-                
+                // verificando se o número é primo
+                n = vet[i];
+
+                if (n == 1)
+                {
+                    Console.WriteLine($"O numero {n} é primo e esta na posicao {i}.");
+                    cont++;
+                }
+                else
+                {
+                    primo = true;
+                    for (int j = 2; j < n; j++)
+                    {
+                        if (n % j == 0)
+                        {
+                            primo = false;
+                        }
+                    }
+                    if (primo)
+                    {
+                        Console.WriteLine($"O numero {n} é primo e esta na posicao {i}.");
+                        cont++;
+                    }
+                }
             }
+            Console.WriteLine();
+            Console.WriteLine("Total de numeros primos encontrados: " + cont + ".");
+
 
         }
     }
