@@ -9,7 +9,7 @@ namespace IntersecVector
     {
         static void Main(string[] args)
         {
-            int len = 5, n = 0, cont = 0;
+            int len = 5, cont = 0;
             int[] vec01 = new int[len];
             int[] vec02 = new int[len];
             int[] intersect = new int[len];
@@ -40,7 +40,6 @@ namespace IntersecVector
                 {
                     if (vec01[i] == vec02[j])
                     {
-                        //n = vec01[i];
                         intersect[cont] = vec01[i];
                         cont++;
                     }
