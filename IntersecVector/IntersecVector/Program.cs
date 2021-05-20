@@ -14,6 +14,7 @@ namespace IntersecVector
             int[] vec02 = new int[len];
             int[] intersect = new int[len];
 
+
             for (int i = 0; i < len; i++)
             {
                 vec01[i] = 0;
