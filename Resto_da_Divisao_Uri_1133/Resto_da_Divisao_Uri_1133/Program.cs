@@ -15,7 +15,7 @@ namespace Resto_da_Divisao_Uri_1133
             {
                 if(i % 5 == 2 || i % 5 == 3)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i % 5);
                 }
             }
 
